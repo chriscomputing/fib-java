@@ -2,6 +2,7 @@ package fib.java.calculator;
 
 import java.math.BigInteger;
 
+// Fibonacci(269434): 1.023015867seconds
 public class DynamicCalculator implements BaseCalculator {
 
     @Override

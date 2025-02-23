@@ -23,6 +23,9 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+
+    // Apache commons math used for Matrix multiplication
+    implementation("org.apache.commons:commons-math3:3.6.1")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
