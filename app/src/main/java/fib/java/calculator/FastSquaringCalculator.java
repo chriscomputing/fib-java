@@ -8,8 +8,8 @@ import org.apache.commons.math3.linear.Array2DRowFieldMatrix;
 import org.apache.commons.math3.linear.FieldMatrix;
 import org.apache.commons.math3.linear.MatrixUtils;
 
-// Fibonacci(2751380): 1.008615005seconds
-public class FastExponentiationCalculator implements BaseCalculator {
+// Fibonacci(2734078): 1.007862526seconds
+public class FastSquaringCalculator implements BaseCalculator {
 
     BigFraction a = BigFraction.ZERO;
     BigFraction b = BigFraction.ONE;
@@ -36,7 +36,8 @@ public class FastExponentiationCalculator implements BaseCalculator {
     }
 
     private FieldMatrix<BigFraction> matrixPower(FieldMatrix<BigFraction> matrix, long power) {
-        FieldMatrix<BigFraction> result = MatrixUtils.createFieldIdentityMatrix(BigFractionField.getInstance(),
+        FieldMatrix<BigFraction> result = MatrixUtils.createFieldIdentityMatrix(
+                BigFractionField.getInstance(),
                 matrix.getRowDimension());
         while (power > 0) {
             if (power % 2 == 1) {
