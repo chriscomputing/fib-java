@@ -11,9 +11,9 @@ public class App {
         BaseCalculator calculator = new FastSquaringCalculator();
         // BaseScheduler scheduler = new fib.java.scheduler.BinaryScheduler(0.3);
         // BaseScheduler scheduler = new fib.java.scheduler.GraphScheduler();
-        BaseScheduler scheduler = new fib.java.scheduler.LinearScheduler(.002);
+        BaseScheduler scheduler = new fib.java.scheduler.RationScheduler(.002);
         Engine engine = new Engine();
-        System.out.println(engine.run(calculator, scheduler, 250000, 1));
-        // System.out.println(engine.singleRun(calculator, 2734078));
+        // System.out.println(engine.run(calculator, scheduler, 306000, 1));
+        System.out.println(engine.singleRun(calculator, 2743397));
     }
 }

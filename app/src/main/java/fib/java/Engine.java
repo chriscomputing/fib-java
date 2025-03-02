@@ -24,7 +24,6 @@ public class Engine {
         long start = this.bean.getCurrentThreadCpuTime();
         BigInteger result = calculator.fibonacci(n);
         long end = this.bean.getCurrentThreadCpuTime();
-        System.out.println(result);
         return (end - start) / 1e9;
     }
 
