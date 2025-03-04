@@ -1,10 +1,10 @@
 package fib.java.scheduler;
 
-public class RationScheduler implements BaseScheduler {
+public class RatioScheduler implements BaseScheduler {
 
     private final double THRESHOLD;
 
-    public RationScheduler(double threshold) {
+    public RatioScheduler(double threshold) {
         this.THRESHOLD = threshold;
     }
 
